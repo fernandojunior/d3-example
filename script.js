@@ -68,19 +68,19 @@ var changeBackgroundColor = function () {
     .style("background-color", function () { return randomColor(); });
 }
 
-var cicleTransition = function (duration, length) {
+var cicleTransition = function (duration, maxRadius, maxDelay) {
     d3.selectAll("circle")
     .transition()
     .duration(duration)
     .attr("fill", function() { return randomColor(); })
-    .delay(function() { return randomInt(1, length); })
-    .attr("r", function() { return randomInt(1, length); });
+    .delay(function() { return randomInt(1, maxDelay); })
+    .attr("r", function() { return randomInt(1, maxRadius); });
 }
 
-var cicleLoop = function () {
+var cicleLoop = function (maxRadius, maxDelay) {
     var duration = 1000;
     var repeat = function() {
-        cicleTransition(duration, length);
+        cicleTransition(duration, maxRadius, maxDelay);
         setTimeout(repeat, duration);
     };
     repeat();
@@ -108,4 +108,4 @@ clear();
 var length = randomInt(1, 100);
 var data = sample(1, 50, length);
 createCircles(data, length);
-cicleLoop();
+cicleLoop(length * 2, length);
