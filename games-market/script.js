@@ -2,7 +2,7 @@ var dataset = [
   { name: 'League of Legends', revenue: 1628 },
   { name: 'CrossFire', revenue: 1110 },
   { name: 'Dungeon Fighter Online', revenue: 1052 },
-  { name: 'World of Warcraft', revenue: 40 },
+  { name: 'World of Warcraft', revenue: 814 },
   { name: 'World of Tanks', revenue: 446 },
   { name: 'Lineage I', revenue: 339 },
   { name: 'Maplestory', revenue: 253 },
