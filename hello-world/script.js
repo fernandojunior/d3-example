@@ -10,7 +10,11 @@ var helloWorld = function(msg) {
     var random = randomInt(1, 360);
     d3.select("#hello_world")
         .style({color: color(random), "font-size": random})
-        .html(function() { return msg + " " + random; });
+        .html(msg);
+    d3.select("footer .container")
+        .html(function () {
+            return "Random: " + random;
+        });
 }
 
 var loop = function(args) {
