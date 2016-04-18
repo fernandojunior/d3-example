@@ -1,6 +1,6 @@
 # d3-tutorial
 
-See [https://fernandojunior.github.com/d3-tutorial/](https://fernandojunior.github.com/d3-tutorial/). Code in [gh-pages](https://github.com/fernandojunior/d3-tutorial/tree/gh-pages) branch.
+See [https://fernandojunior.github.com/d3-example/](https://fernandojunior.github.com/d3-example/). Code in [gh-pages](https://github.com/fernandojunior/d3-example/tree/gh-pages) branch.
 
 ## Contributing
 
