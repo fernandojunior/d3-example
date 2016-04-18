@@ -84,7 +84,7 @@ var histrogram = function(values) {
         .on('mouseout', tip.hide);
 }
 
-d3.csv('../data/treated_with_labels.csv', function(error, data) {
+d3.csv('data.csv', function(error, data) {
     var drawHistogram = function(attribute) {
         var canvas = d3.select("#canvas");
         canvas.html("");
