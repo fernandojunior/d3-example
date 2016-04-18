@@ -34,12 +34,7 @@ var cicleLoop = function (maxRadius) {
 var radius = randomInt(1, 100);
 var data = sample(1, 50, radius);
 
-d3.select("footer .container")
-    .text(function() { return "data=[" + data + "];" });
-
-d3.select("main").html("");
-
-d3.select("main")
+d3.select("main .container")
     .selectAll("svg circle")
     .data(data)
     .enter()
@@ -50,3 +45,13 @@ d3.select("main")
     .attr('r', function (datum) { return datum; });
 
 cicleLoop(radius * 2.5);
+
+var footer = d3.selectAll("footer .container")
+    .append("ul")
+    .attr("class", "list-inline");
+
+footer.selectAll("li")
+    .data(data)
+    .enter()
+    .append("li")
+    .text(function(datum) { return datum });
