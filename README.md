@@ -1,5 +1,6 @@
-# d3-tutorial
+# d3-example
 
+Some data visualizations with D3.js used in my talk in [jsday.com.br](http://jsday.com.br).
 See [https://fernandojunior.github.com/d3-example/](https://fernandojunior.github.com/d3-example/). Code in [gh-pages](https://github.com/fernandojunior/d3-example/tree/gh-pages) branch.
 
 ## Contributing
